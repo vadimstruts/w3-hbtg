@@ -1,8 +1,7 @@
 import * as w3cli from './w3cli.js'
 import express from 'express'
 import process from 'node:process'
-import {getTokenExpirationEpoch} from './utils.js'
-
+import { getTokenExpirationEpoch } from './utils.js'
 
 const rest = express()
 
@@ -36,13 +35,11 @@ export default function (host, port, can, expiration) {
         json: true
       })
 
-      res
-        .status(200)
-        .send({
-          success: true,
-          secret: token.xAuthSecret,
-          auth: token.authorization
-        })
+      res.status(200).send({
+        success: true,
+        secret: token.xAuthSecret,
+        auth: token.authorization
+      })
     } catch (err) {
       console.error('Error:' + err)
       res.status(200).send({ success: false })

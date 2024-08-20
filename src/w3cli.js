@@ -1,4 +1,3 @@
-import * as DID from '@ipld/dag-ucan/did'
 import { getClient } from '@web3-storage/w3cli/lib.js'
 import { base64url } from 'multiformats/bases/base64'
 import cryptoRandomString from 'crypto-random-string'
