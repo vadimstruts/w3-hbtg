@@ -1,0 +1,30 @@
+{
+  "name": "w3-hbtg",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "(Apache-2.0 AND MIT)",
+  "description": "",
+  "bin": {
+    "hbtg": "./src/shim.js",
+    "w3-hbtg": "./src/shim.js"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "@ipld/car": "^5.3.2",
+    "@ipld/dag-ucan": "^3.4.0",
+    "@rimiti/express-async": "^1.2.0",
+    "@ucanto/core": "^10.0.1",
+    "@ucanto/principal": "^9.0.1",
+    "@web3-storage/w3cli": "^7.8.2",
+    "@web3-storage/w3up-client": "^16.0.0",
+    "sade": "^1.8.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "eslint": "^9.9.0",
+    "globals": "^15.9.0"
+  }
+}
